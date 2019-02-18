@@ -6,7 +6,7 @@
 #### 操作
 1、把collision文件拷贝到egret项目中的libs/ 目录下 ，注意不要拷贝到modules里
 
-2、修改egretProperties.json，新增
+2、修改egretProperties.json，modules下新增
 ```json
    {
      "name": "collision", 
