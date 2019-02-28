@@ -23,3 +23,17 @@ collision.checkCollision(bitmap1, bitmap2，true)
 
 /*返回 boolean*/
 ```
+
+#### 在微信小游戏中使用
+在 scripts/wxgame/wxgame.ts 添加 
+```javascript
+//如果是eui项目会有
+if (filename == "libs/modules/eui/eui.js" || filename == 'libs/modules/eui/eui.min.js') {
+                    content += ";window.eui = eui;"
+                }
+这是我们添加的               
+ if (filename == "libs/collision/collision.js" || filename == 'libs/collision/collision.min.js') {
+                    content += ";window.collision = collision;"
+ }
+
+```
