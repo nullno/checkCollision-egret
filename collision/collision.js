@@ -1,7 +1,6 @@
 
-this.collision = this.collision || {};
-
-(function () {
+var collision = {};
+(function (collision) {
 
     // 碰撞检测
     collision.checkCollision = function (bitmap1, bitmap2, isPixel) {
@@ -36,7 +35,7 @@ this.collision = this.collision || {};
         }
         //重叠区域
         function handleEgdeCollisions(rect) {
-            console.log('已开启像素检测')
+            //console.log('已开启像素检测')
             var renderTextureA = new egret.RenderTexture(),
                 renderTextureB = new egret.RenderTexture();
             renderTextureA.drawToTexture(bitmap1, new egret.Rectangle(rect.x - bitmap1.x, rect.y - bitmap1.y, rect.width, rect.height));
@@ -58,4 +57,4 @@ this.collision = this.collision || {};
 
     }
 
-} ());
+})(collision);
