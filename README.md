@@ -31,7 +31,7 @@ collision.checkCollision(bitmap1, bitmap2，true)
 if (filename == "libs/modules/eui/eui.js" || filename == 'libs/modules/eui/eui.min.js') {
                     content += ";window.eui = eui;"
                 }
-这是我们添加的               
+//这是我们添加的               
  if (filename == "libs/collision/collision.js" || filename == 'libs/collision/collision.min.js') {
                     content += ";window.collision = collision;"
  }
